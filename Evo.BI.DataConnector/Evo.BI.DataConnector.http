@@ -1,0 +1,40 @@
+@Evo.BI.DataConnector_HostAddress = http://localhost:5035
+
+GET {{Evo.BI.DataConnector_HostAddress}}/
+Accept: application/json
+
+###
+
+GET {{Evo.BI.DataConnector_HostAddress}}/lark/order/meta.json
+Accept: application/json
+
+###
+
+POST {{Evo.BI.DataConnector_HostAddress}}/lark/order/table_meta
+Accept: application/json
+
+###
+
+POST {{Evo.BI.DataConnector_HostAddress}}/lark/order/records
+Accept: application/json
+
+###
+
+POST {{Evo.BI.DataConnector_HostAddress}}/lark/order/records
+Accept: application/json
+Content-Type: application/json
+
+{
+  "maxPageSize": 2
+}
+
+###
+
+POST {{Evo.BI.DataConnector_HostAddress}}/lark/order/records
+Accept: application/json
+Content-Type: application/json
+
+{
+  "pageToken": "2",
+  "maxPageSize": 2
+}
