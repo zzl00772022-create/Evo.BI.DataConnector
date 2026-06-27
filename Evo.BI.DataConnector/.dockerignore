@@ -1,0 +1,12 @@
+**/.git
+**/.vs
+**/.agents
+**/.codex
+**/bin
+**/obj
+**/*.user
+**/*.suo
+
+Dockerfile
+README.md
+*.http
